@@ -9,5 +9,5 @@ class Note(models.Model):
     created = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return self.body[:50]
+        return str(self.id) + self.body[:50]
 
